@@ -43,7 +43,7 @@ function isEven(a) {
 };
 
 function isSquare(a) {
-  // your code here
+  return a >= 0 && Number.isInteger(Math.sqrt(a));
 };
 
 function startsWith(char, string) {
