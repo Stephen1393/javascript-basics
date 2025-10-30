@@ -47,15 +47,21 @@ function isSquare(a) {
 };
 
 function startsWith(char, string) {
-  // your code here
+  return string.startsWith(char);
 };
 
 function containsVowels(string) {
-  // your code here
-};
+
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
+
+  for (let letter of string.toLowerCase()) {
+    if (vowels.includes(letter)) return true;
+  }
+return false;
+}
 
 function isLowerCase(string) {
-  // your code here
+  return string === string.toLowerCase();
 };
 
 module.exports = {
