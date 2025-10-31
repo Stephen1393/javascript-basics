@@ -1,9 +1,9 @@
 const getNthElement = (index, array) => {
-  // your code here
+  return array[index];
 };
 
 const arrayToCSVString = array => {
-  // your code here
+  return array.toString(',');
 };
 
 const csvStringToArray = string => {
