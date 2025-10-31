@@ -23,20 +23,24 @@ const removeNthElement = (index, array) => {
 };
 
 const numbersToStrings = numbers => {
-  // your code here
+  return numbers.map(String);
 };
 
 const uppercaseWordsInArray = strings => {
-  // your code here
+  return strings.join(',').toUpperCase().split(',');
 };
 
 const reverseWordsInArray = strings => {
-  // your code here
-};
+  return strings.map(function (word) { return word.split('').reverse().join(''); });
+
+  };
+
 
 const onlyEven = numbers => {
-  // your code here
-};
+  return numbers.filter(function (num){
+    return num % 2 === 0
+  }
+)};
 
 const removeNthElement2 = (index, array) => {
   // your code here
