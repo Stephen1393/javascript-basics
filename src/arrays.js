@@ -43,12 +43,15 @@ const onlyEven = numbers => {
 )};
 
 const removeNthElement2 = (index, array) => {
-  // your code here
+  return array.toSpliced(index, 1);
 };
 
 const elementsStartingWithAVowel = strings => {
-  // your code here
-};
+  const vowels = ['a', 'e', 'i', 'o', 'u']
+  return strings.filter (function(letter){
+    return vowels.includes(letter[0]);
+  }
+)};
 
 const removeSpaces = string => {
   // your code here
