@@ -15,11 +15,11 @@ const addToArray = (element, array) => {
 };
 
 const addToArray2 = (element, array) => {
-  // your code here
+  return [...array,element];
 };
 
 const removeNthElement = (index, array) => {
-  // your code here
+  return array.splice(index, 1);
 };
 
 const numbersToStrings = numbers => {
