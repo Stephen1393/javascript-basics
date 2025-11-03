@@ -58,12 +58,19 @@ const removeSpaces = string => {
 };
 
 const sumNumbers = numbers => {
-  // your code here
-};
+  return numbers.reduce (function(sum, num) {
+    return sum + num;
+  }
+    
+  )};
 
 const sortByLastLetter = strings => {
-  // your code here
-};
+  return [...strings].sort(function (a, b) {
+    const lastA = String(a).slice(-1);
+    const lastB = String(b).slice(-1);
+    return lastA.localeCompare(lastB);
+  });
+}
 
 module.exports = {
   getNthElement,
