@@ -9,11 +9,19 @@ const getName = object => {
 };
 
 const getProperty = (property, object) => {
-  // your code here
+  return object[property];
 };
 
 const hasProperty = (property, object) => {
-  // your code here
+  if (object == null) {
+    return false;
+  }
+  if (property in object) {
+    return true;
+  }
+  else {
+    return false;
+  }
 };
 
 const isOver65 = person => {

@@ -43,7 +43,7 @@ describe('getName', () => {
 });
 
 describe('getProperty', () => {
-  xit('returns the given property', () => {
+  it('returns the given property', () => {
     expect(
       getProperty('age', {
         name: 'Fred',
@@ -70,7 +70,7 @@ describe('hasProperty', () => {
     age: 23
   };
 
-  xit('returns true if the object has the given property', () => {
+  it('returns true if the object has the given property', () => {
     expect(hasProperty('age', fred)).toBe(true);
     expect(hasProperty('name', tom)).toBe(true);
     expect(hasProperty('favouriteColour', fred)).toBe(false);
