@@ -44,12 +44,18 @@ const getAges = people => {
 };
 
 const findByName = (name, people) => {
-  // your code here
+return people.find(function (n) {
+  return n.name === name;
+});
 };
 
 const findHondas = cars => {
-  // your code here
-};
+   return cars.filter(function (H) {
+return H.manufacturer === 'Honda';
+   });
+  }
+
+
 
 const averageAge = people => {
   // your code here
