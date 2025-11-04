@@ -25,11 +25,22 @@ const hasProperty = (property, object) => {
 };
 
 const isOver65 = person => {
-  // your code here
-};
+  if (!person || typeof person.age != "number") {
+    return false;
+  }
+  if (person.age > 65) {
+    return true
+  } else {
+      return false
+    }
+  };
+
+
 
 const getAges = people => {
-  // your code here
+  return people.map(function (p) {
+    return p.age;
+  })
 };
 
 const findByName = (name, people) => {
