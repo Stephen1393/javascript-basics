@@ -58,8 +58,11 @@ return H.manufacturer === 'Honda';
 
 
 const averageAge = people => {
-  // your code here
-};
+    var total = people.reduce(function(sum, add) {
+    return sum + add.age;
+  }, 0);
+  return total / people.length
+  }
 
 const createTalkingPerson = (name, age) => {
   // your code here
