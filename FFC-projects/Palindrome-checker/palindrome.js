@@ -1,3 +1,10 @@
 function isPalindrome(str) {
- const word = str.toLowerCase().replace(/[a^-z0-9]/gi,"")   
+ const word = str.toLowerCase().replace(/[^a-z0-9]/gi,"")
+ let backward = "";
+ 
+ for (let i = word.length - 1; i >= 0; i--) {
+    backward += word[i];
+}
+
+
 }
